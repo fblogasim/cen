@@ -1,6 +1,6 @@
 var hasNormalised = false;
 var responsiveBox = document.getElementById("responsive-box");
-setInterval(makeResponsive, 10);
+
 normaliseBanner();
 myInterval = setInterval(changeLanguage, 3000);
 
@@ -39,17 +39,6 @@ function changeLanguage() {
     }
 }
 
-function makeResponsive() {
-    if (responsiveBox.offsetWidth <= 600 && responsiveBox.offsetWidth > 400) {
-        responsiveBox.style.gridTemplateColumns = "auto auto";
-    } else if (responsiveBox.offsetWidth <= 400) {
-        responsiveBox.style.gridTemplateColumns = "none";
-    } else if (responsiveBox.offsetWidth > 600) {
-        responsiveBox.style.gridTemplateColumns = "auto auto auto";
-    }
-    var textArea = document.getElementById("size");
-    textArea.innerHTML = responsiveBox.offsetWidth;
-}
 
 function changeColor(color) {
     document.getElementById("our-philosophy").style.backgroundColor = color;

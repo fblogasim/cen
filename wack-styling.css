@@ -193,7 +193,7 @@ body {
 }
 
 .card {
-	background-color: #f7e6ff;
+	background-color: rgba(255,255, 255, 0.7);
 	padding: 15px;
 }
 
@@ -258,32 +258,8 @@ body {
 	}
 }
 
-#why-us {
-	img {
-		height: 300px;
-		width: 250px;
-		object-fit: contain;
-	}
-}
 
-.review-container {  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
-  gap: 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "review1 review1 review2 review2 review6"
-    "review1 review1 review2 review2 review6"
-    "review1 review1 review3 review3 review3"
-    "review4 review4 review3 review3 review3"
-    "review5 review5 review5 review5 review5";
-}
 
-@media (width < 770px){
-	.review-container{
-		display: block;
-	}
-}
 
 .review-container div{
 	border-radius: 15px;
@@ -319,9 +295,6 @@ h4 {
 }
 
 @media (392px < width < 915px) {
-	.flexbox {
-		height: 800px;
-	}
 
 	.gridbox-diamond {
 		grid-template-columns: 90px 90px 90px;
@@ -375,9 +348,6 @@ h4 {
 }
 
 @media (width < 393px) {
-	.flexbox {
-		height: 800px;
-	}
 
 	.gridbox-diamond {
 		grid-template-columns: 70px 70px 70px;

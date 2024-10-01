@@ -22,6 +22,12 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+      <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+    crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
@@ -32,7 +38,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
-        <div class="container-fluid">
+        <div class="container-fluid g-0">
           <a class="navbar-brand" href="./index.html"
             ><img
               id="site-identity"
@@ -76,8 +82,8 @@
     </header>
 
     <section id="skillset">
-      <div class="flexbox">
-        <div class="flex50 flexbox center">
+      <div class="about-banner">
+        <div>
           <div class="greetingSection pt-5">
             <strong
               class="strong-inverse"
@@ -92,22 +98,24 @@
             <p>Responsive and Accessible web-design for all</p>
             <a href="#about"><button class="btn-regular">Learn More</button></a>
           </div>
-        </div>
-        <div class="flex50 flexbox center">
+        
+          <div class="d-flex justify-content-center align-items-center">
           <embed type="text/html" src="wordcloud.html" />
         </div>
+        </div>
+        
       </div>
     </section>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 about-page-wrapper">
       <section id="greeting">
-        <div id="about" class="container-fluid bg-dark text-light p-5 slanted slide-left">
+        <div id="about" class="container-fluid text-light p-5 slanted slide-left purple_section">
           <div class="row">
             <div
               class="col-md-8 d-flex justify-content-center align-items-center"
             >
               <div>
-                <strong class="strong-inverse">About Cenixa</strong>
+                <strong class="strong">About Cenixa</strong>
                 <p>
                   At Cenixa, we are passionate about creating exceptional
                   digital experiences that empower businesses to succeed in
@@ -132,210 +140,91 @@
       </section>
       <br />
       <section id="our-mission">
-        <div class="row">
-          <div
-            class="col-md-4 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="./assets/our-mission.png"
-              class="section-image"
-              alt="a picture of a plant representing our mission and core values"
-            />
-          </div>
-          <div
-            class="col-md-8 d-flex justify-content-center align-items-center"
-            style="box-shadow: 2px -2px purple"
-          >
-            <div>
-              <strong class="strong-inverse px-3">Our Mission</strong>
-              <p>
-                Our mission is simple yet powerful: to help businesses thrive in
-                the digital age. We believe that every brand has a unique story
-                to tell, and we are here to bring that story to life through
-                innovative technology, creative design, and strategic digital
-                marketing.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-8 d-flex justify-content-center align-items-center"
-            style="box-shadow: -2px 2px purple"
-          >
-            <p>
-              At Cenixa, we believe in following the best web development
-              practices, but not at the expense of being generic and sacrificing
-              brand identity. We create websites that embody the values of the
-              businesses they belong to. After all, they are not extensions of
-              their corresponding businesses, they are a part of them.
-            </p>
-          </div>
-          <div
-            class="col-md-4 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="./assets/not-generic.png"
-              class="section-image"
-              alt="an illustration indicating that websites can help businesses stand out"
-            />
-          </div>
+        <div class="mission pb-5">
+          <strong class="strong-inverse">Our Mission</strong>
+          <p>
+            Our mission is simple yet powerful: to help businesses thrive in
+            the digital age. We believe that every brand has a unique story
+            to tell, and we are here to bring that story to life through
+            innovative technology, creative design, and strategic digital
+            marketing.
+          </p>
+          <p>
+            At Cenixa, we believe in following the best web development
+            practices, but not at the expense of being generic and sacrificing
+            brand identity. We create websites that embody the values of the
+            businesses they belong to. After all, they are not extensions of
+            their corresponding businesses, they are a part of them.
+          </p>
         </div>
       </section>
-      <section id="our-philosophy" class="p-5 slanted-philosophy">
-        <div class="row">
-          <div
-            class="col-md-8 d-flex justify-content-center align-items-center"
-          >
-            <div>
-              <strong class="strong-inverse">Our Philosophy</strong>
-              <p>
-                At Cenixa, we believe in creating user-friendly websites that
-                are both responsive and accessible. Our philosophy centers
-                around ensuring that users and clients, regardless of their
-                technical expertise, can easily navigate and interact with our
-                websites. By prioritizing responsiveness and accessibility, we
-                aim to provide a seamless online experience for all, including
-                those with varying degrees of technological proficiency and
-                abilities.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 d-flex justify-content-center align-items-center position-relative"
-          >
-            <div>
-              <img
-                src="./assets/our-philosophy.png"
-                class="section-image"
-                alt="an illustration indicating Cenixa's philosophy"
-              />
-              <div
-                class="shrinking-box"
-                id="shrinking-box"
-                onmouseover="startAnimation()"
-              >
-                <div
-                  onmouseover="changeColorMobile('red')"
-                  onmouseout="changeColorMobile('pink')"
-                ></div>
-                <div
-                  onmouseover="changeColorMobile('green')"
-                  onmouseout="changeColorMobile('pink')"
-                ></div>
-                <div
-                  onmouseover="changeColorMobile('blue')"
-                  onmouseout="changeColorMobile('pink')"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" id="resizing-div">
-          <span>Window size: 600 X &nbsp;<code id="size"></code></span>
-          <div class="responsive-box" id="responsive-box">
-            <div
-              class="left-box"
-              onmouseover="changeColor('#ff6666')"
-              onmouseout="changeColor('pink')"
-            ></div>
-            <div
-              class="center-box"
-              onmouseover="changeColor('#80ff80')"
-              onmouseout="changeColor('pink')"
-            ></div>
-            <div
-              class="right-box"
-              onmouseover="changeColor('#4db8ff')"
-              onmouseout="changeColor('pink')"
-            ></div>
-          </div>
-          <div class="resize-instructions">
-            <p class="small text-muted">
-              *Resize the window to see how the contents re-align based on the
-              size of the screen and do not forget to touch the colors..
-            </p>
-          </div>
-        </div>
-      </section>
+      <hr>
 
-      <section id="conception">
-        <strong class="strong-inverse p-5 m-5">Conception</strong>
-        <div class="container-fluid mt-3">
-          <!-- Control the column width, and how they should appear on different devices -->
-          <div class="row">
-            <div class="col-3 text-white d-flex justify-content-center">
-              <img
-                class="conception-image"
-                src="./assets/plant.png"
-                alt="a plant illustration representing the conception of Cenxa"
-                style="animation: floaty 2s infinite"
-              />
-            </div>
-            <div
-              class="col-9 bg-dark text-light d-flex align-items-center p-3 rounded"
-            >
-              Amidst the Covid-19 crisis, a group of diverse professionals came
-              together with a shared vision born from their personal
-              experiences. They learned firsthand the power of adaptability and
-              digital transformation during challenging times, leading to the
-              creation of Cenixa.
-            </div>
-          </div>
-          <br />
-          <div class="row">
-            <div
-              class="col-3 text-white d-flex align-items-center justify-content-center"
-            >
-              <img
-                class="conception-image"
-                src="./assets/rona.png"
-                alt="Cenixa was fromed after the covid pandemic to help small businesses"
-                style="animation: floaty 2s infinite 0.6s"
-              />
-            </div>
-            <div
-              class="col-9 bg-dark text-light d-flex align-items-center p-3 rounded"
-            >
-              Each member of the founding team faced their own struggles,
-              witnessing businesses grapple with unprecedented challenges. This
-              inspired them to establish Cenixa, driven by a passion to empower
-              businesses with tailored web development, digital marketing, and
-              branding solutions.
-            </div>
-          </div>
-          <br />
-          <div class="row">
-            <div class="col-3 text-white d-flex justify-content-center">
-              <img
-                class="conception-image"
-                src="./assets/flourish.png"
-                alt="an illustration indicating that websites can allow businesses to flourish even in times of uncertainty"
-                style="animation: floaty 2s infinite 1s"
-              />
-            </div>
-            <div
-              class="col-9 bg-dark text-light d-flex align-items-center p-3 rounded"
-            >
-              At Cenixa, the focus is on more than just services; it's about
-              building relationships and offering steadfast support on each
-              client's digital journey. As the world continues to recover,
-              Cenixa remains committed to fostering resilience and providing
-              forward-thinking solutions for businesses navigating uncertainty.
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="p-5 contact-us bg-dark text-light">
-        <strong class="strong-inverse">Get In Touch</strong>
+      <section id="conception" class="my-5 ">
+       <strong class="strong-inverse p-2">Conception</strong>
+       <p class="container"> 
+        Amidst the Covid-19 crisis, a group of diverse professionals came
+        together with a shared vision born from their personal
+        experiences. They learned firsthand the power of adaptability and
+        digital transformation during challenging times, leading to the
+        creation of Cenixa.
+      </p>
+      <p class="container">
+        Each member of the founding team faced their own struggles,
+        witnessing businesses grapple with unprecedented challenges. This
+        inspired them to establish Cenixa, driven by a passion to empower
+        businesses with tailored web development, digital marketing, and
+        branding solutions.
+      </p>
+      <img src = "./assets/conception.jpg" class="section-image p-5 rounded" alt="story of Cenixa's origin">
+
+      <p class="container p-5 text-center">
+        At Cenixa, the focus is on more than just services; it's about
+        building relationships and offering steadfast support on each
+        client's digital journey. As the world continues to recover,
+        Cenixa remains committed to fostering resilience and providing
+        forward-thinking solutions for businesses navigating uncertainty.
+        <br><br>
+        <button class="btn-regular">Get in touch</button>
+      </p>
+
+    </section>
+    <hr>
+
+    <section id = "the-team" class="py-5">
+      <strong class="strong-inverse p-2">Meet the Team</strong>
+      <div class="row">
+        <div class="col-sm-4 p-5 shadow rounded">
+          <img src = "./images/team/asim.jpg" class="section-image rounded">
+          <h3>Asim</h3>
+          <em class="text-dark">Developer</em> 
+          <p class="text-muted"> Asim is a multimedia specialist and IT technician specializing in front-end web development. He focuses on creating visually appealing and user-friendly interfaces, using his knowledge of HTML, CSS, and JavaScript. Asim keeps up with industry trends to ensure his projects meet client expectations and remain competitive.</p>
+        </div>
+        <div class="col-sm-4 p-5">
+          <img src = "./images/team/daniel.jpg" class="section-image rounded">
+          <h3>Daniel</h3>
+          <em class="text-dark">Data/ Network Analyst</em>
+          <p class="text-muted">Denis is a data analyst and network engineer with a strong interest in mathematics. He combines his analytical skills with technical expertise to interpret complex data sets and optimize network performance. Denis enjoys exploring statistical methods and mathematical models to identify trends and provide actionable insights. His analytical mindset helps him solve problems efficiently and enhance system reliability in his work.</p>
+        </div>
+        <div class="col-sm-4 p-5 shadow rounded">
+          <img src = "./images/team/charlotte.jpg" class="section-image rounded">
+          <h3>Charlotte</h3>
+          <em class="text-dark">Illustrator</em>
+          <p class="text-muted"> Charlotte is an illustrator known for her work in both traditional canvas art and digital mediums. She seamlessly blends classic techniques with modern technology to create captivating visuals that tell compelling stories. Whether using paint and brushes or digital tools, Charlotte's distinctive style shines through in her vibrant colors and intricate details. Her versatility allows her to explore a wide range of subjects, making her work appealing to diverse audiences.</p>
+        </div>
+      </div>
+    </section>
+
+      <section class="p-5 contact-us purple_section text-light">
+        <strong class="strong">Get In Touch</strong>
         <p>
           Ready to take your digital presence to the next level? Contact us
           today to discuss how we can help your business
         </p>
         <p class="text-center">
           <a href="./Contact.html"
-            ><button class="btn-inverse">Get in touch</button></a
+            ><button class="btn-regular">Get in touch</button></a
           >
         </p>
       </section>
@@ -377,7 +266,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
-
     <script src="greetings.js"></script>
   </body>
 </html>
