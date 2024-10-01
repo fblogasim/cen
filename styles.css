@@ -605,17 +605,6 @@ figcaption {
   object-fit: contain;
 }
 
-.slanted {
-  clip-path: polygon(0 0, 100% 11%, 100% 86%, 0 100%);
-}
-
-
-@media (width < 600px) {
-  .slanted {
-    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 75%);
-  }
-
-}
 
 
 
@@ -989,7 +978,29 @@ h2 span{
 
 .purple_section{
   background-color: purple;
+  position:relative;
 }
+
+.purple_section .flyingbird{
+    position:absolute; 
+    top:0;
+    left:-100vw;
+    transition: all 5s ease-out;
+}
+
+@media(width < 800px){
+    .purple_section .flyingbird{
+        transition:all 3s ease-out;
+    }
+}
+
+.flyingbird.flyingbird-animation{
+        top:-10px;
+        left:100vw;
+}
+
+
+
 
 i.bi{
   font-size: 50px;
