@@ -356,7 +356,7 @@
             </div>
           </div>
         </div>
-        <div class = "container">
+        <div class = "container overflow-hidden">
           <strong class="strong-inverse"><i class="bi bi-arrows-angle-contract"></i>Responsive Designs</strong>
             <p>Maintain the usability and aesthetics if your site across multiple devices</p>
             <p>Allow your customers to connect with your business from home, work or on the go!</p>
@@ -365,13 +365,29 @@
           </div>
           
           <strong class="strong-inverse"><i class="bi bi-universal-access"></i>Accessible sites</strong>
-          <div id = "info">
-          </div>
-          <br>
-          <p>These are some of the numerous factors that affect the accessibility of a site.
-    <br>
-    By using appropriate <b>tools, technologies and techniques</b>, we make sure that your customers
-    can use your site regardless of their browser-device preference and accessibility requirements.</p>
+            <p>Make your website more <b>accessible</b> and allow your customers to use it regardless of their accessibility needs!</p>
+            
+    <div class = "interactive-section" id = "interactiveSection">
+    <textarea id="textBox" placeholder="Type something here...">Adjust the typography to your liking..</textarea><br><br>
+
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor" onchange="updateStyle()"><br><br>
+
+    <label for="textColor">Text Color:</label>
+    <input type="color" id="textColor" onchange="updateStyle()"><br><br>
+
+    <label for="fontSize">Font Size:</label>
+    <input type="number" id="fontSize" min="8" max="72" onchange="updateStyle()" value="13"> px<br><br>
+<p>Switch mode:</p>
+        <div class="toggle-container">
+        <input type="checkbox" id="toggle" class="toggle-checkbox">
+        <label for="toggle" class="toggle-label" onclick = "switchMode()">
+            <span class="toggle-button"></span>
+        </label>
+    </div>
+    </div>
+
+    </div>
         </div>
       </section>
 

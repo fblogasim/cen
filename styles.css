@@ -108,6 +108,11 @@ b{
   color: purple;
 }
 
+footer b{
+font-weight:bold;
+color:white;    
+}
+
 
 .benifits_of_website_mobile{
   display: none;
@@ -223,8 +228,14 @@ figcaption {
 
   /*change footer background color*/
   footer {
-    background-color: #c964c7;
-    background: linear-gradient(to right, #af50ae, #ff33cc);
+    background-image:url('./images/footer_image.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:top;
+    height:100vh;
+    display:grid;
+    align-items:center;
   }
 
   /*flexbox and gridBox properties*/
@@ -1195,7 +1206,73 @@ h1#greetingDescription{
 }
 
 
+.interactive-section{
+    background-color:white;
+    border:2px solid purple;
+    border-radius:30px;
+    padding:20px;
+   
+}
 
+
+.our-philosophy textarea{
+        font-size:13px;
+}
+
+/*style for the toggle button*/
+.toggle-container {
+    position: relative;
+}
+
+.toggle-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.toggle-label {
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 44px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    background-image: url('./images/light-bg.jpg'); /* Change background when checked */
+    background-size:cover;
+    transition: background-color 0.3s ease;
+    border: 2px solid purple;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    left: 4px;
+    bottom: 3px;
+    background-image:url('./images/light.png');
+    background-size:80%;
+    background-position:center;
+    background-repeat:no-repeat;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0,0,0,0.4) 1px 1px 2px;
+    
+    
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-image: url('./images/dark-bg.jpg'); /* Change background when checked */
+    background-size:cover;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+    transform: translateX(52px); /* Move the button when checked */
+    background-image:url('./images/dark.png');
+    
+}
+
+00
 
 
 

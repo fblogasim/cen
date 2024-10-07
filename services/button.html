@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch</title>
+    <style>
+  
+
+.toggle-container {
+    position: relative;
+}
+
+.toggle-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.toggle-label {
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1509803874385-db7c23652552?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D'); /* Change background when checked */
+    background-size:cover;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    left: 4px;
+    bottom: 4px;
+    background-image:url('https://cdn-icons-png.flaticon.com/512/831/831682.png');
+    background-size:80%;
+    background-position:center;
+    background-repeat:no-repeat;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0,0,0,0.4) 1px 1px 2px;
+    
+    
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/038/987/125/small/ai-generated-glowing-star-trail-illuminates-dark-forest-silhouette-generated-by-ai-photo.jpg'); /* Change background when checked */
+    background-size:cover;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+    transform: translateX(26px); /* Move the button when checked */
+    background-image:url('https://cdn-icons-png.flaticon.com/512/4445/4445942.png');
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="toggle-container">
+        <input type="checkbox" id="toggle" class="toggle-checkbox">
+        <label for="toggle" class="toggle-label">
+            <span class="toggle-button"></span>
+        </label>
+    </div>
+</body>
+</html>
+
